@@ -4,6 +4,7 @@
         <h3>{{ task.text }}</h3>
         <p>{{ task.description }}</p>
         <p>Due: {{ new Date(task.day).toLocaleString() }}</p>
+        <p> {{ task.done ? 'Completed' : 'Not Completed' }} </p>
         <button @click="closeModal">Close</button>
       </div>
     </div>
